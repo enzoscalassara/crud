@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frigorifico.scenes.carregamentos.entrada.CarregamentosEntradaController">
+    <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="30.0" layoutY="480.0" mnemonicParsing="false" onAction="#Editar" text="Editar" />
+            <Button layoutX="412.5" layoutY="480.0" mnemonicParsing="false" onAction="#Inserir" text="Inserir" />
+            <Button layoutX="787.5" layoutY="480.0" mnemonicParsing="false" onAction="#Deletar" text="Deletar" />
+            <Button layoutX="414.0" layoutY="522.0" mnemonicParsing="false" onAction="#OpenMainMenu" text="Menu" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableview" layoutY="14.0" prefHeight="450.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="colTransportadora" prefWidth="200.0" text="Transportadora" />
+            <TableColumn fx:id="colMotorista" prefWidth="120.0" text="Motorista" />
+            <TableColumn fx:id="colData_chegada" prefWidth="160.0" text="Data de Chegada" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

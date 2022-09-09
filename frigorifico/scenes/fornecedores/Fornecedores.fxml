@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frigorifico.scenes.fornecedores.FornecedoresController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="30.0" layoutY="480.0" mnemonicParsing="false" onAction="#Editar" text="Editar" />
+            <Button layoutX="412.5" layoutY="480.0" mnemonicParsing="false" onAction="#Inserir" text="Inserir" />
+            <Button layoutX="787.5" layoutY="480.0" mnemonicParsing="false" onAction="#Deletar" text="Deletar" />
+            <Button layoutX="414.0" layoutY="522.0" mnemonicParsing="false" onAction="#OpenMainMenu" text="Menu" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableview" layoutY="14.0" prefHeight="450.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="colNome" prefWidth="200.0" text="Nome" />
+            <TableColumn fx:id="colCNPJ" prefWidth="120.0" text="CNPJ" />
+            <TableColumn fx:id="colTel" prefWidth="120.0" text="Tel" />
+            <TableColumn fx:id="colContato" prefWidth="120.0" text="Contato" />
+            <TableColumn fx:id="colEmail" prefWidth="120.0" text="Email" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

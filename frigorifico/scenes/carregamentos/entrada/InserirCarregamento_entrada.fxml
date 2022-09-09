@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frigorifico.scenes.compradores.InserirCompradorController">
+   <children>
+      <TextField fx:id="textTransportadora" layoutX="102.0" layoutY="25.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="textMotorista" layoutX="102.0" layoutY="68.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="textData_chegada" layoutX="102.0" layoutY="101.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="textFornecedor" layoutX="102.0" layoutY="144.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="6.0" layoutY="25.0" prefHeight="17.0" prefWidth="92.0" text="Transportadora:" />
+      <Label layoutX="6.0" layoutY="68.0" prefHeight="17.0" prefWidth="92.0" text="Motorista:" />
+      <Label layoutX="6.0" layoutY="101.0" prefHeight="17.0" prefWidth="92.0" text="Data Chegada:" />
+      <Label layoutX="6.0" layoutY="144.0" prefHeight="17.0" prefWidth="92.0" text="Fornecedor:" />
+      <Button fx:id="btnAdd" layoutX="209.0" layoutY="241.0" mnemonicParsing="false" onAction="#addNovo" text="Adicionar" />
+      <Button fx:id="btnCancelar" layoutX="90.0" layoutY="241.0" mnemonicParsing="false" onAction="#cancelarAdd" text="Cancelar" />
+   </children>
+</AnchorPane>
